@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<h1>Hi there, Welcome to Blog-Box</h1>
+<p>Thanks for visiting my blog! Explore the app and enjoy.</p>
+
+{% if not user.is_authenticated %}
+    <p class="ltc">Login to add your own posts.</p>
+{% endif %}
+
+{% endblock %}
